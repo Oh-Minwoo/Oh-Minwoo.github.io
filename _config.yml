@@ -1,49 +1,38 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: Bay Jekyll Theme
-description: Bay is a minimal Jekyll Theme.
-baseurl: "/bay"
-url: "https://eliottvincent.github.io"
-og_image: /assets/img/profile-pic.jpg
+title: Minwoo Oh
+description: Portfolio page of Minwoo Oh.
+baseurl: ""
+url: "https://oh-minwoo.github.io/portfolio/"
+og_image: /assets/img/profile_pic.png
 google_analytics: "UA-121636368-3"
 
 header:
   pages:
     - name: Home
       slug: /
-    - name: Work
-    - name: Blog
+    - name: Publications
+      slug: /pub
+    - name: CV
+      slug: https://drive.google.com/file/d/1WSEqU0TBr5O9-tE0tt0y2aDwtUwpjVpz/view?usp=sharing
 
 footer:
-  show_powered_by: true
   contact:
     - type: email
-      name: Email
-      value: yourmail@domain.com
-    - type: wechat
-      value: YourWeChatUsername
-      link: "#"
-  follow:
-    - type: twitter
-      name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - type: facebook
-      name: Facebook
-      link: http://facebook.com/YourFacebookUsername
-    - type: linkedin
-      name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
-    - type: github
-      name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - type: dribbble
-      name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - type: rss
-      name: RSS
-      link: /feed.xml
+      icon: fas fa-envelope
+      value: "alsdn4435@gm.gist.ac.kr"
+    - type: telephone
+      icon: fas fa-phone
+      value: "+82 10-2321-4435"
+    - type: address
+      icon: fas fa-map-marker-alt
+      value: >
+        123 Cheomdangwagi-ro (Oryong-dong), Dasan Building Room 201,<br>
+        Buk-gu, Gwangju, Republic of Korea (zip code: 61005)
+
+    
+
 
 # Build settings
 markdown: kramdown

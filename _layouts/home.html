@@ -8,13 +8,67 @@
     <div class="page-content">
       <div class="wrapper">
         <div class="home">
-          <img
-            src="{{ page.profile_picture.src | absolute_url }}"
-            alt="{{ page.profile_picture.alt }}"
-            class="profile-pic"
-          />
+          <div class="profile-container">
+            <!-- 왼쪽: 본문 -->
+            <div class="profile-main">
+              {{ content }}
+            </div>
+          
+            <!-- 오른쪽: 사진 + 아이콘 -->
+            <div class="profile-sidebar">
+              <img
+                src="{{ page.profile_picture.src | absolute_url }}"
+                alt="{{ page.profile_picture.alt }}"
+                class="profile-pic"
+              />
+              <div class="profile-links">
+                <a href="mailto:alsdn4435@gm.gist.ac.kr" class="icon-link" aria-label="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/minwoo-oh-341b14313/" class="icon-link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://oh-minwoo.github.io/portfolio/" class="icon-link" aria-label="Google Scholar">
+                  <i class="ai ai-google-scholar-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-          {{ content }}
+          <hr class="home-divider">
+
+          {% include education.md %}
+          
+          <hr class="home-divider" />
+
+          {% include research.md %}
+          
+          <hr class="home-divider" />
+
+
+          <div class="work">
+            <h1><strong>Publications</strong></h1>
+          
+            {% for item in site.data.publications %}
+            <div class="work-item">
+              <div class="work-img">
+                <img
+                  src="{{ item.image.src | absolute_url }}"
+                  alt="{{ item.image.alt }}"
+                />
+              </div>
+              <div class="work-description">
+                <p class="pub-title"><strong>{{ item.title }}</strong></p>
+                <p class="pub-authors">{{ item.authors }}</p>
+                <p class="pub-venue">{{ item.venue }}</p>
+              </div>
+            </div>
+            {% unless forloop.last %}
+            <hr class="pub-divider" />
+            {% endunless %}
+            {% endfor %}
+          </div>
+
         </div>
       </div>
     </div>

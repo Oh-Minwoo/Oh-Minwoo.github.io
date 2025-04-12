@@ -1,0 +1,17 @@
+- title: "LEGOLAS: Learning & Enhancing Golf Skills through LLM-Augmented System"
+  authors: Kangbeen Ko, <u><strong>Minwoo Oh</strong></u>, Minwoo Seong, SeungJun Kim (2025)
+  venue: "CHI LBW 2025: ACM Conference on Human Factors in Computing Systems Late-Breaking Work - <span class=accepted>Accepted</span>"
+  image:
+    src: /assets/img/publications/LEGOLAS.gif
+    alt: LEGOLAS system gif
+
+
+
+
+- title: Effect of user perspective designs on XR-based motion guidance systems for real-world motor skills 
+  authors: <u><strong>Minwoo Oh</strong></u>, Minwoo Seong, SeungJun Kim (2025)
+  venue: HCI Korea 2025
+  pdf: /assets/papers/HCIK2025_user_perspective.pdf  
+  image:
+    src: /assets/img/publications/HCIK_2025.png
+    alt: HCI Korea papser image

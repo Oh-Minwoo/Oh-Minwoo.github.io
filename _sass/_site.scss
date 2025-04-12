@@ -1,19 +1,19 @@
 @use "variables" as variables;
 @use "mixins" as mixins;
 
-.profile-pic {
-  float: right;
-  width: 202px;
-  border: #ccc 1px solid;
-  border-radius: 3px;
-  margin-left: 20px;
+// .profile-pic {
+//   float: right;
+//   width: 180px;
+//   border: #ccc 1px solid;
+//   border-radius: 3px;
+//   margin-left: 30px;
 
-  @include mixins.media-query(variables.$on-mobile) {
-    float: none;
-    margin-bottom: 20px;
-    margin-left: 0px;
-  }
-}
+//   @include mixins.media-query(variables.$on-mobile) {
+//     float: none;
+//     margin-bottom: 20px;
+//     margin-left: 0px;
+//   }
+// }
 
 .footer-col {
   font-size: 12px;

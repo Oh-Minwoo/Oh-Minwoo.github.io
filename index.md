@@ -1,14 +1,29 @@
 ---
 layout: home
+permalink: /
 profile_picture:
-  src: /assets/img/profile-pic.jpg
+  src: /assets/img/profile_pic.png
   alt: website picture
 ---
 
-<p>
-  Welcome! This site serves as an example for the Bay Jekyll theme. Bay is a very simple and minimal theme, directly inspired by Dan Grover's <a href="http://dangrover.com">website</a>.
+# Welcome! My name is **Minwoo Oh**,
+
+<p class="subtitle">
+  M.S. Student at <a href="https://www.hcis-lab.com/"><strong>Human-Centered Intelligent Systems Lab (HCIS Lab)</strong></a>
+  <br>
+  at <strong>Gwangju Institute of Science and Technology</strong>.
 </p>
 
-<p>
-  You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
+<p class="intro-paragraph">
+  I am a graduate student specializing in <strong>Human-Computer Interaction (HCI)</strong>. 
 </p>
+
+<p class="intro-paragraph">
+  My research interests focus on how immersive technologies (VR, AR) can enhance motor skill acquisition and improve user experience. I am also interested in integrating sensor-based motion tracking and AI-driven feedback into interactive learning environments.
+</p>
+
+<p class="intro-paragraph">
+ For more details about my background and research, please refer to my <a href="https://...">CV</a>.
+</p>
+
+

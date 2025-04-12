@@ -12,8 +12,8 @@ h3,
 h4,
 h5,
 h6,
-p,
 blockquote,
+p,
 pre,
 hr,
 dl,
@@ -25,6 +25,7 @@ figure {
   padding: 0;
   -webkit-font-smoothing: antialiased;
 }
+
 
 /**
  * Basic styling
@@ -189,8 +190,8 @@ pre {
  */
 .wrapper {
   position: relative;
-  max-width: -webkit-calc(760px - (#{variables.$spacing-unit} * 2));
-  max-width: calc(760px - (variables.$spacing-unit * 2));
+  max-width: -webkit-calc(1200px - (#{variables.$spacing-unit} * 2));
+  max-width: calc(1200px - (variables.$spacing-unit * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: variables.$spacing-unit;

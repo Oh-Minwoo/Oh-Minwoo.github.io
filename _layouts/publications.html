@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="work">
+          <h1><strong>Publications</strong></h1>
+        
+          {% for item in site.data.publications %}
+          <div class="work-item">
+            <div class="work-img">
+              <img
+                src="{{ item.image.src | absolute_url }}"
+                alt="{{ item.image.alt }}"
+              />
+            </div>
+            <div class="work-description">
+              <p class="pub-title"><strong>{{ item.title }}</strong></p>
+              <p class="pub-authors">{{ item.authors }}</p>
+              <p class="pub-venue">{{ item.venue }}</p>
+              <div class="pub-icons">
+                {% if item.pdf %}
+                <a href="{{ item.pdf | absolute_url }}" class="icon-link" target="_blank" aria-label="PDF">
+                  <i class="fa-solid fa-file-lines"></i>
+                </a>
+                {% endif %}
+            
+                {% if item.video %}
+                <a href="{{ item.video }}" class="icon-link" target="_blank" aria-label="Video">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          {% unless forloop.last %}
+          <hr class="pub-divider" />
+          {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include foot.html %}
+  </body>
+</html>
