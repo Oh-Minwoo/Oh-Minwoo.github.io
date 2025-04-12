@@ -3,8 +3,8 @@
 
 title: Minwoo Oh
 description: Portfolio page of Minwoo Oh.
-baseurl: ""
 url: "https://oh-minwoo.github.io/"
+baseurl: ""
 og_image: /assets/img/profile_pic.png
 google_analytics: "UA-121636368-3"
 
