@@ -23,7 +23,7 @@ profile_picture:
 </p>
 
 <p class="intro-paragraph">
- For more details about my background and research, please refer to my <a href="https://...">CV</a>.
+ For more details about my background and research, please refer to my <a href="https://drive.google.com/file/d/1WSEqU0TBr5O9-tE0tt0y2aDwtUwpjVpz/view?usp=drive_link">CV</a>.
 </p>
 
 
