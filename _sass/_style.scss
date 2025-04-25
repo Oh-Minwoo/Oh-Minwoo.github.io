@@ -1,3 +1,6 @@
+@use "mixins";
+@use "variables";
+
 .subtitle {
     font-size: 1.2rem;
     font-weight: 500;
@@ -21,6 +24,12 @@
     align-items: flex-start;
     gap: 2rem;
     margin-bottom: 2rem;
+
+    @include mixins.media-query(variables.$on-mobile) {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
   }
   
   .profile-main {
@@ -37,6 +46,10 @@
   .profile-pic {
     width: 180px;
     border-radius: 6px;
+
+    @include mixins.media-query(variables.$on-mobile) {
+      margin-bottom: 1rem;
+    }
   }
   
   .profile-links {

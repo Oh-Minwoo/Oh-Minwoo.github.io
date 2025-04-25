@@ -147,6 +147,26 @@
   margin-left: -0.5rem;
 }
 
+@include mixins.media-query(variables.$on-mobile) {
+  .contact-links {
+    font-size: 0.5rem;
+  }
+
+  .contact-item i {
+    font-size: 0.5rem;
+  }
+
+  .site-footer h4 {
+    font-size: 1rem;     // 기존보다 살짝 줄이기
+    margin-bottom: 1rem;
+  }
+
+  .contact-text {
+    font-size: 0.85rem;
+  }
+}
+
+
 .follow-links > .social-link {
   flex: 0 50%;
 }
