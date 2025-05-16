@@ -1,6 +1,7 @@
 - title: "LEGOLAS: Learning & Enhancing Golf Skills through LLM-Augmented System"
   authors: Kangbeen Ko, <u><strong>Minwoo Oh</strong></u>, Minwoo Seong, SeungJun Kim (2025)
-  venue: "CHI LBW 2025: ACM Conference on Human Factors in Computing Systems Late-Breaking Work - <span class=accepted>Accepted</span>"
+  venue: "CHI LBW 2025: ACM Conference on Human Factors in Computing Systems Late-Breaking Work"
+  pdf: "https://dl.acm.org/doi/10.1145/3706599.3720141"
   image:
     src: /assets/img/publications/LEGOLAS.gif
     alt: LEGOLAS system gif

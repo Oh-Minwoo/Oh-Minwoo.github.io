@@ -1,5 +1,5 @@
-@use "mixins";
-@use "variables";
+@use "mixins" as mixins;
+@use "variables" as variables;
 
 .subtitle {
     font-size: 1.2rem;

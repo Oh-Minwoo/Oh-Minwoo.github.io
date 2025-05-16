@@ -9,7 +9,7 @@
       </p>
       <p class="pub-authors">Gwangju Institute of Science and Technology</p>
       <p class="pub-venue">Mar 2025 – Present | Gwangju, Korea</p>
-      <p class="pub-venue">Advisor: Prof. Seungjun Kim</p>
+      <p class="pub-venue">Advisor: Prof. SeungJun Kim</p>
     </div>
   </div>
 
@@ -21,7 +21,7 @@
       </p>
       <p class="pub-authors">Gwangju Institute of Science and Technology</p>
       <p class="pub-venue">Mar 2020 – Feb 2025 | Gwangju, Korea</p>
-      <p class="pub-venue">Advisor: Prof. HyeonHo Jeong & Prof. Seungjun Kim</p>
+      <p class="pub-venue">Advisor: Prof. HyeonHo Jeong & Prof. SeungJun Kim</p>
       <p class="pub-venue">Thesis: <em>Effect of user perspective designs on XR-based motion guidance systems for real-life motor skills</em></p>
     </div>
   </div>
