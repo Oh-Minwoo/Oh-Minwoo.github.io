@@ -21,7 +21,12 @@
             <div class="work-description">
               <p class="pub-title"><strong>{{ item.title }}</strong></p>
               <p class="pub-authors">{{ item.authors }}</p>
-              <p class="pub-venue">{{ item.venue }}</p>
+              <p class="pub-venue">
+                {{ item.venue }}
+                {% if item.status == 'accepted' %}
+                  <span class="accepted"> (Accepted)</span>
+                {% endif %}
+              </p>
               <div class="pub-icons">
                 {% if item.pdf %}
                 <a href="{{ item.pdf | absolute_url }}" class="icon-link" target="_blank" aria-label="PDF">
