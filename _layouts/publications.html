@@ -27,6 +27,7 @@
                   <span class="accepted"> (Accepted)</span>
                 {% endif %}
               </p>
+              <p class="pub-info">{{ item.info }}</p>
               <div class="pub-icons">
                 {% if item.pdf %}
                 <a href="{{ item.pdf | absolute_url }}" class="icon-link" target="_blank" aria-label="PDF">
