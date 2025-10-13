@@ -1,8 +1,8 @@
 - title: "AttraCar: Multisensory In-Car VR with Thermal, Airflow, and Motion Feedback through Built-In Vehicle Systems"
   authors: Dohyeon Yeo, Gwangbin Kim, <u><strong>Minwoo Oh</strong></u>, Jeongju Park, Bocheon Gim, Seongjun Kang, Ahmed Elsharkawy, SeungJun Kim
   venue: "UIST 2025: The ACM Symposium on User Interface Software and Technology"
-  status: "accepted"
-  info: "Selected for demonstrantion at UIST 2025 & ISMAR 2025"
+  info: "Conducted live demonstrantion at UIST 2025 & ISMAR 2025"
+  pdf: "https://dl.acm.org/doi/10.1145/3746059.3747642"
   image:
     src: /assets/img/publications/attracar.gif
     alt: AttraCar Video Preview gif
