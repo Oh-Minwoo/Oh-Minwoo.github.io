@@ -1,15 +1,35 @@
 /**
  * Menu
  */
-$("a.menu-icon").on("click", function(event) {
-  var w = $(".menu");
+const menuToggle = document.querySelector(".menu-icon");
+const siteNav = document.querySelector(".site-nav");
 
-  w.css({
-    display: (w.css("display") === "none")
-      ? "block"
-      : "none"
+if (menuToggle && siteNav) {
+  function closeMenu() {
+    siteNav.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  }
+
+  menuToggle.addEventListener("click", function() {
+    const isOpen = siteNav.classList.toggle("is-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
-});
+
+  document.addEventListener("click", function(event) {
+    if (!siteNav.contains(event.target) || event.target.closest(".page-link")) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
+      closeMenu();
+      menuToggle.focus();
+    }
+  });
+
+  window.matchMedia("(max-width: 768px)").addEventListener("change", closeMenu);
+}
 
 /**
  * Footer year

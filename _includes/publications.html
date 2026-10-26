@@ -1,0 +1,73 @@
+<div class="work">
+  <h1><strong>{{ include.title | default: "Publications" | escape }}</strong></h1>
+
+  {% assign publication_items = site.data.publications %}
+  {% if include.selected_only %}
+    {% assign publication_items = publication_items | where: "selected", true %}
+  {% endif %}
+  {% for item in publication_items %}
+  <div class="work-item">
+    <div class="work-img{% if item.image.fit == 'contain' %} work-img-contain{% endif %}">
+      <img
+        src="{{ item.image.src | absolute_url }}"
+        alt="{{ item.image.alt | escape }}"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <div class="work-description">
+      <p class="pub-title"><strong>{{ item.title | escape }}</strong></p>
+      <p class="pub-authors">{{ item.authors }}</p>
+      {% if item.venue or item.status == 'accepted' %}
+      <p class="pub-venue">
+        {{ item.venue | escape }}
+        {% if item.status == 'accepted' %}
+          <span class="accepted"> (Accepted)</span>
+        {% endif %}
+      </p>
+      {% endif %}
+      {% if item.info and item.info.size > 0 %}
+      <ul class="pub-info">
+        {% for line in item.info %}
+          <li>{{ line }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if item.pdf or item.video or item.dataset or item.github %}
+      <div class="pub-icons">
+        {% if item.pdf %}
+        <a href="{{ item.pdf | absolute_url | escape }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Paper" title="Read paper">
+          <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+          <span class="pub-link-label">Paper</span>
+        </a>
+        {% endif %}
+
+        {% if item.video %}
+        <a href="{{ item.video | escape }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Video" title="Watch video">
+          <i class="fab fa-youtube" aria-hidden="true"></i>
+          <span class="pub-link-label">Video</span>
+        </a>
+        {% endif %}
+
+        {% if item.dataset %}
+        <a href="{{ item.dataset | escape }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Dataset" title="View dataset on Harvard Dataverse">
+          <i class="fa-solid fa-database" aria-hidden="true"></i>
+          <span class="pub-link-label">Dataset</span>
+        </a>
+        {% endif %}
+
+        {% if item.github %}
+        <a href="{{ item.github | escape }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="View code on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <span class="pub-link-label">GitHub</span>
+        </a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% unless forloop.last %}
+  <hr class="pub-divider" />
+  {% endunless %}
+  {% endfor %}
+</div>

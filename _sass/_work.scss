@@ -52,6 +52,14 @@
   display: block;
 }
 
+.work-img-contain {
+  background: transparent;
+}
+
+.work-img-contain img {
+  object-fit: contain;
+}
+
 .work-description {
   flex: 1;
   font-size: 0.95rem;
@@ -124,11 +132,31 @@
 
 // publications icons
 
+.pub-link-label {
+  display: none;
+}
+
 .pub-icons {
   margin-top: 0.1rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
+}
+
+.pub-icons .icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.pub-icons .icon-link:focus-visible {
+  outline: 2px solid #0073b1;
+  outline-offset: 3px;
 }
 
 .pub-icons i {
@@ -137,10 +165,21 @@
   transition: color 0.2s ease;
 }
 
-.pub-icons a:hover i {
+.pub-icons a:hover i,
+.pub-icons a:focus-visible i {
   color: #e63946; // PDF red or YouTube red
 }
 
 .pub-icons a[aria-label="Video"]:hover i {
   color: #cc0000;
+}
+
+.pub-icons a[aria-label="Dataset"]:hover i,
+.pub-icons a[aria-label="Dataset"]:focus-visible i {
+  color: #0073b1;
+}
+
+.pub-icons a[aria-label="GitHub"]:hover i,
+.pub-icons a[aria-label="GitHub"]:focus-visible i {
+  color: #24292f;
 }
