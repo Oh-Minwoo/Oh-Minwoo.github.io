@@ -15,7 +15,7 @@ header:
     - name: Publications
       slug: /pub
     - name: CV
-      slug: https://drive.google.com/file/d/16JJFHwvb7nDeEq34gVq0_Cglew5BS264/view?usp=sharing
+      slug: /assets/cv/CV_Minwoo_Oh_GIST.pdf
 
 footer:
   contact:
@@ -43,6 +43,7 @@ plugins:
 
 # Excluded items
 exclude:
+  - assets/cv_latex/
   - .sass-cache/
   - .jekyll-cache/
   - feed.xml

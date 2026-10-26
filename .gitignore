@@ -1,3 +1,6 @@
 _site
 .sass-cache
 .jekyll-cache
+
+# Keep editable CV sources and compiler files local.
+/assets/cv_latex/

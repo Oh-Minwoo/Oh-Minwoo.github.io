@@ -9,7 +9,7 @@ profile_picture:
 # Welcome! My name is **Minwoo Oh**,
 
 <p class="subtitle">
-  M.S. Student at <a href="https://www.hcis-lab.com/"><strong>Human-Centered Intelligent Systems Lab (HCIS Lab)</strong></a>
+  a Ph.D. Student at <a href="https://www.hcis-lab.com/"><strong>Human-Centered Intelligent Systems Lab (HCIS Lab)</strong></a>
   <br>
   at <strong>Gwangju Institute of Science and Technology</strong>.
 </p>
@@ -23,7 +23,7 @@ profile_picture:
 </p>
 
 <p class="intro-paragraph">
- For more details about my background and research, please refer to my <a href="https://drive.google.com/file/d/16JJFHwvb7nDeEq34gVq0_Cglew5BS264/view?usp=sharing">CV</a>.
+ For more details about my background and research, please refer to my <a href="{{ '/assets/cv/CV_Minwoo_Oh_GIST.pdf' | relative_url }}">CV</a>.
 </p>
 
 

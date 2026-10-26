@@ -5,7 +5,7 @@
     <div class="work-description">
       <p class="pub-title">
         <i class="fas fa-graduation-cap" style="margin-right: 0.5rem;"></i>
-        <strong>M.S. in Department of AI Convergence</strong>
+        <strong>M.S. and Ph.D. Integrated Program in the Department of AI</strong>
       </p>
       <p class="pub-authors">Gwangju Institute of Science and Technology</p>
       <p class="pub-venue">Mar 2025 – Present | Gwangju, Korea</p>
