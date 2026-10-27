@@ -1,5 +1,5 @@
 # Display order is shared by the home and Publications pages (newest first).
-# Set selected: true to also show an entry on the home page.
+# The selected flag is only used when a page requests selected_only=true.
 - title: "MultiSenseGolf: A Multimodal Sensor-Based Dataset for Golf Swing Motion and Shot Performance Analysis"
   selected: true
   authors: <u><strong>Oh, M.</strong></u>, Seong, M., Ko, K., Lim, C., Kim, G., Choi, H., DelPreto, J., Rus, D., and Kim, S.
